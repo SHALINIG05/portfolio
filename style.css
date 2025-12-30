@@ -1,0 +1,256 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* COMMON */
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.narrow {
+  max-width: 780px;
+}
+
+.section {
+  padding: 50px 0;   /* ⭐ reduced from 90px */
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #38bdf8;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e293b;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  font-size: 26px;
+  color: #38bdf8;
+}
+
+.logo span {
+  color: #a855f7;
+}
+
+nav a {
+  margin-left: 18px;
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  padding: 70px 0 40px;   /* ⭐ reduced gap */
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 38px;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #38bdf8, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* ABOUT */
+#about {
+  padding-top: 35px;   /* ⭐ removes blank space */
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #1e293b;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* PROJECT CARD – GLOW + POP */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  width: 270px;
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+}
+
+
+.faded {
+  opacity: 0.6;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding-top: 35px;   /* ⭐ reduced space above */
+}
+
+.connect-text {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #94a3b8;
+}
+
+.connect-text h2 {
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+.connect-text p {
+  color: #cbd5f5;
+}
+
+/* CONTACT CARD */
+/* CONTACT CARD – SOFT FULL GLOW */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 28px;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* ⭐ Mild glow on hover */
+.contact-card:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+
+/* ICON LIST */
+.contact-links {
+  display: flex;
+  flex-direction: column;  /* ⭐ vertical */
+  gap: 18px;               /* ⭐ space between items */
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;   /* ⭐ text white */
+}
+
+.contact-links i {
+  font-size: 20px;
+  color: #ffffff;   /* ⭐ icon white */
+}
+
+
+.contact-links a:hover {
+  color: #7dd3fc;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 22px;
+  font-size: 14px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+  
+}
